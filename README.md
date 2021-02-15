@@ -39,9 +39,7 @@ The following libraries need also to be installed :
 The build system follows the usual configure/build/install cycle. Configuration is needed
 to be done only once. A typical configuration for a 64-bit system is shown below:
 
-    $ ./autogen.sh && ./configure CFLAGS='-g -O2' \
-        --sysconfdir=/etc --localstatedir=/var --libdir=/usr/lib64 \
-	    --prefix=/usr
+    $ ./autogen.sh && PYTHON=/usr/bin/python3 ./configure
 
 On an 32-bit system use --libdir=/usr/lib instead of --libdir=/usr/lib64.
         
